@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.child {
+    flex: 1;
+}
+
+h3,
+h1,
+h2 {
+    padding-left: 0.5em;
+}
+
+.whiteBox {
+    border-color: white;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-radius: 30px;
+    max-width: 400px;
+    padding: 3px;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: lightgrey;
+}
+
+a:hover {
+    color: lightskyblue;
+}
+
+div {
+    font-size: small;
+}
+
+.whiteBoxForComponent {
+    border-color: white;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-radius: 30px;
+    max-width: 100%;
+    padding: 3px;
+    margin: 5px;
+}
+
+h1 {
+    font-size: large;
+}
