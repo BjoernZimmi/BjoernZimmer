@@ -1,1 +1,38 @@
-<p-menubar [model]="menubarItems"></p-menubar>
+<div class="menuBarContainer">
+    <div class="child" style="color: #deb887; font-size: x-large; padding-left: 15px; padding-top: 15px;">
+        Björn Zimmer
+    </div>
+    <div class="child">
+        <p-menubar [model]="menubarItems"></p-menubar>
+    </div>
+    <div class="child">
+
+    </div>
+
+</div>
+
+<!-- <p-dropdown 
+    [options]="countries" 
+    [(ngModel)]="selectedCountry"
+    optionLabel="name"
+    [showClear]="true"
+    placeholder="Select a Country">
+        <ng-template pTemplate="selectedItem">
+            <div class="flex align-items-center gap-2" *ngIf="selectedCountry">
+                <img 
+                    src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png"
+                    [class]="'flag flag-' + selectedCountry.code.toLowerCase()"
+                    style="width: 18px" />
+                <div>{{ selectedCountry.name }}</div>
+            </div>
+        </ng-template>
+        <ng-template let-country pTemplate="item">
+            <div class="flex align-items-center gap-2">
+                <img 
+                    src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png"
+                    [class]="'flag flag-' + country.code.toLowerCase()" 
+                    style="width: 18px" />
+                <div>{{ country.name }}</div>
+            </div>
+        </ng-template>
+</p-dropdown> -->
