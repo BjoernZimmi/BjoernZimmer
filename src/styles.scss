@@ -11,13 +11,15 @@ body {
     display: flex;
 }
 
+.flag-icon {
+    padding-left: 5px;
+  }
+
 .menuBarContainer {
     background: #343e4d;
     display: flex;
-    // background: #520909 !important;
     color: #ffffff;
     border: outset;
-    // border-color: burlywood;
     border-inline: none;
 }
 
@@ -83,7 +85,6 @@ div {
 }
 
 .p-menubar {
-    // background: #520909 !important;
     color: rgba(255, 255, 255);
 }
 
@@ -93,7 +94,6 @@ div {
 
 // ändert das Pop-up-Menü
 .p-menubar .p-submenu-list {
-    // background: rgba(82, 9, 9, 0.6) !important;
     border: revert-layer;
     border-color: rgba($color: #000000, $alpha: 0.7);
     border-top-style: none;
@@ -149,8 +149,3 @@ p-menubar {
 
 
 @import "primeng/resources/themes/bootstrap4-dark-blue/theme.css";
-// @import 'primeicons/primeicons.css';
-// @import 'flag-icon-css/css/flag-icons.css';
-// // @import 'flag-icon-css/css/flag-icons-mini.css';
-// @import 'flag-icon-css/css/flag-icon.min.css';
-@import "primeicons/primeicons.css";

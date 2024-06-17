@@ -1,38 +1,25 @@
 <div class="menuBarContainer">
-    <div class="child" style="font-size: x-large; padding-left: 15px; padding-top: 15px;">
+    <div class="child" style="font-size: large; padding-left: 15px; padding-top: 20px;">
         Björn Zimmer
     </div>
     <div class="child">
         <p-menubar [model]="menubarItems"></p-menubar>
     </div>
     <div class="child">
-
+        <p-dropdown [options]="countries" [(ngModel)]="selectedCountry" optionLabel="name" [showClear]="true" placeholder="Select a Country">
+            <ng-template pTemplate="selectedItem">
+                <div class="container" *ngIf="selectedCountry" (click)="onFlagClick(selectedCountry)">
+                    <img [src]="'assets/images/flags/' + selectedCountry.code.toLowerCase() + '.svg'" style="width: 18px;" />
+                    <div class="flag-icon">{{ selectedCountry.name }}</div>
+                </div>
+            </ng-template>
+            <ng-template let-country pTemplate="item">
+                <div class="container" (click)="onFlagClick(country)">
+                    <img [src]="'assets/images/flags/' + country.code.toLowerCase() + '.svg'" style="width: 18px" />
+                    <div class="flag-icon">{{ country.name }}</div>
+                </div>
+            </ng-template>
+        </p-dropdown>
     </div>
 
 </div>
-
-<!-- <p-dropdown 
-    [options]="countries" 
-    [(ngModel)]="selectedCountry"
-    optionLabel="name"
-    [showClear]="true"
-    placeholder="Select a Country">
-        <ng-template pTemplate="selectedItem">
-            <div class="flex align-items-center gap-2" *ngIf="selectedCountry">
-                <img 
-                    src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png"
-                    [class]="'flag flag-' + selectedCountry.code.toLowerCase()"
-                    style="width: 18px" />
-                <div>{{ selectedCountry.name }}</div>
-            </div>
-        </ng-template>
-        <ng-template let-country pTemplate="item">
-            <div class="flex align-items-center gap-2">
-                <img 
-                    src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png"
-                    [class]="'flag flag-' + country.code.toLowerCase()" 
-                    style="width: 18px" />
-                <div>{{ country.name }}</div>
-            </div>
-        </ng-template>
-</p-dropdown> -->
