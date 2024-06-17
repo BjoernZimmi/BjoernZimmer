@@ -7,12 +7,13 @@ import { ImpressumComponent } from './component/impressum/impressum.component';
 import { LoginComponent } from './component/login/login.component';
 
 export const routes: Routes = [
-    { path: '', component: StartpageComponent },
-    { path: 'frontend', component: FrontendComponent },
-    { path: 'backend', component: BackendComponent },
-    { path: 'database', component: DatabaseComponent },
-    { path: 'impressum', component: ImpressumComponent },
-    { path: 'login', component: LoginComponent },
-    { path: '**', component: StartpageComponent },
+    { path: '', component: StartpageComponent, title: 'Björn Zimmer' },
+    { path: 'start', component: StartpageComponent, title: 'Björn Zimmer' },
+    { path: 'frontend', component: FrontendComponent, title: 'Björn Zimmer - Frontend' },
+    { path: 'backend', component: BackendComponent, title: 'Björn Zimmer - Backend' },
+    { path: 'database', component: DatabaseComponent, title: 'Björn Zimmer - Database' },
+    { path: 'impressum', component: ImpressumComponent, title: 'Björn Zimmer - Impressum' },
+    { path: 'login', component: LoginComponent, title: 'Björn Zimmer - Login' },
+    { path: '**', component: StartpageComponent, title: 'Björn Zimmer' },
 
 ];
