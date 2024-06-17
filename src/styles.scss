@@ -146,6 +146,15 @@ p-menubar {
     }
 }
 
+.menuItemRIght {
+    justify-content: end;
+    display: flex;
+}
+
+// .max-width-dropdown {
+//     max-width: 100px;
+// }
+
 
 
 @import "primeng/resources/themes/bootstrap4-dark-blue/theme.css";

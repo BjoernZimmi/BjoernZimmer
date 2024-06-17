@@ -5,8 +5,8 @@
     <div class="child">
         <p-menubar [model]="menubarItems"></p-menubar>
     </div>
-    <div class="child">
-        <p-dropdown [options]="countries" [(ngModel)]="selectedCountry" optionLabel="name" [showClear]="true" placeholder="Select a Country">
+    <div class="child menuItemRIght">
+        <p-dropdown [options]="countries" [(ngModel)]="selectedCountry" optionLabel="name" [showClear]="true" placeholder="Sprache" class="max-width-dropdown">
             <ng-template pTemplate="selectedItem">
                 <div class="container" *ngIf="selectedCountry" (click)="onFlagClick(selectedCountry)">
                     <img [src]="'assets/images/flags/' + selectedCountry.code.toLowerCase() + '.svg'" style="width: 18px;" />

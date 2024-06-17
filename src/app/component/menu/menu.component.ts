@@ -19,8 +19,8 @@ export class MenuComponent implements OnInit {
   menubarItems: MenuItem[] = [];
 
   countries: Country[] = [
-    { code: 'DE', name: 'Germany' },
-    { code: 'GB', name: 'United Kingdom' },
+    { code: 'DE', name: 'DE' },
+    { code: 'GB', name: 'EN' },
   ];
 
   ngOnInit(): void {
@@ -49,5 +49,4 @@ export class MenuComponent implements OnInit {
 interface Country {
   code: string;
   name: string;
-  flagIcon?: string;
 }
