@@ -149,12 +149,12 @@ p-menubar {
 .menuItemRIght {
     justify-content: end;
     display: flex;
+    overflow-x: clip;
 }
 
-// .max-width-dropdown {
-//     max-width: 100px;
-// }
-
+.p-dropdown-panel {
+    background-color: rgba(#343e4d, 0.7)
+}
 
 
 @import "primeng/resources/themes/bootstrap4-dark-blue/theme.css";
