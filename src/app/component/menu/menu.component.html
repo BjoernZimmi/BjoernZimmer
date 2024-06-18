@@ -12,6 +12,7 @@
                     <img [src]="'assets/images/flags/' + selectedCountry.code.toLowerCase() + '.svg'" style="width: 18px;" />
                     <div class="flag-icon">{{ selectedCountry.name }}</div>
                 </div>
+                <div *ngIf="!selectedCountry" class="flag-icon">Sprache</div>
             </ng-template>
             <ng-template let-country pTemplate="item">
                 <div class="container" (click)="onFlagClick(country)">

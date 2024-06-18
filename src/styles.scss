@@ -134,6 +134,24 @@ p-menubar {
     justify-content: center;
 }
 
+
+.max-width-dropdown {
+    width: 120px !important;
+    max-width: 120px !important;
+    min-width: 120px !important;
+}
+
+.p-dropdown {
+    display: flex;
+}
+
+.p-dropdown-label {
+    text-overflow:clip;
+
+}
+
+
+
 @media screen and (max-width: 960px) {
     .p-menubar .p-menubar-button {
         background: rgba(#343e4d, 0.6) !important;
