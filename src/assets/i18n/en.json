@@ -5,5 +5,7 @@
     "IMPRINT": "Imprint",
     "DATA_PROTECTION": "Privacy policy",
     "CONTACT": "Contact",
-    "RIGHTS": "All rights reserved."
+    "RIGHTS": "All rights reserved.",
+    "INFORMATION": "Information",
+    "BROWSER_INFORMATION": "Your current browser language is: "
 }
