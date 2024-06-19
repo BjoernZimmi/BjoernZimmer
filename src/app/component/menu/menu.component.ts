@@ -1,9 +1,11 @@
-import { AfterViewInit, Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { MenubarModule } from 'primeng/menubar';
 import { DropdownModule } from 'primeng/dropdown';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { TranslateService } from '@ngx-translate/core';
+import { TranslationService } from '../../api/services/translation/translation.service';
 
 @Component({
   selector: 'app-menu',
@@ -12,6 +14,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './menu.component.html',
   styles: ``
 })
+
 export class MenuComponent implements OnInit {
 
   selectedCountry!: Country;
@@ -20,10 +23,10 @@ export class MenuComponent implements OnInit {
 
   countries: Country[] = [
     { code: 'DE', name: 'DE' },
-    { code: 'GB', name: 'EN' },
+    { code: 'EN', name: 'EN' },
   ];
 
-  constructor() {}
+  constructor(private translationService: TranslationService, private translate: TranslateService) {}
 
   ngOnInit(): void {
     this.menubarItems = [
@@ -40,10 +43,12 @@ export class MenuComponent implements OnInit {
         routerLink: 'backend'
       }
     ];
+
   }
 
   onFlagClick(country: Country): void {
-    console.log('Flag clicked:', country);
+    this.translationService.useLanguage(country.code.toLowerCase());
+
   }
 
 }
