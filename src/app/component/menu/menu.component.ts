@@ -5,6 +5,7 @@ import { DropdownModule } from 'primeng/dropdown';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { TranslationService } from '../../core/services/translation/translation.service';
+import { Country } from '../../core/interfaces/country.interface';
 
 @Component({
   selector: 'app-menu',

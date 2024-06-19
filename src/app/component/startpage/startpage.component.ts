@@ -1,9 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { VERSION } from '@angular/core';
-import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
-import { TranslationService } from '../../api/services/translation/translation.service';
-import { HttpClient } from '@angular/common/http';
+import { Component, OnInit, VERSION } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
+import { TranslationService } from '../../core/services/translation/translation.service';
 
 
 
