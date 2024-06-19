@@ -1,5 +1,9 @@
 {
     "TITLE": "Hello and welcome",
     "TEXTSTARTPAGE1": "On my website you can see an application in the current Angular version.",
-    "TEXTSTARTPAGE2": "The current version in this app is: Angular"
+    "TEXTSTARTPAGE2": "The current version in this app is: Angular",
+    "IMPRINT": "Imprint",
+    "DATA_PROTECTION": "Privacy policy",
+    "CONTACT": "Contact",
+    "RIGHTS": "All rights reserved."
 }

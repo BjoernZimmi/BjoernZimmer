@@ -17,10 +17,17 @@ body {
 }
 
 .menuBarContainer {
-    background: #343e4d;
+    background: rgba($color: #343e4d, $alpha: 1.0);
     display: flex;
     color: #ffffff;
-    border: outset;
+    // border: outset;
+    // border-inline: none;
+}
+
+footer {
+    background: #343e4d;
+    color: #ffffff;
+    border-top:medium;
     border-inline: none;
 }
 

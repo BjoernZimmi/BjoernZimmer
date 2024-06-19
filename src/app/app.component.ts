@@ -10,6 +10,7 @@ import { FooterComponent } from './component/footer/footer.component';
     styleUrl: './app.component.scss',
     imports: [RouterOutlet, MenuComponent, FooterComponent]
 })
+
 export class AppComponent {
   title = 'Bjoern_Zimmer';
 
