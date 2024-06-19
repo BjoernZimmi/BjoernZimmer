@@ -5,7 +5,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     margin: 0;
-    
+
 }
 
 .container {
@@ -132,9 +132,8 @@ div {
     background-position: center center;
 }
 
-.backgroundSize {
-    height: 92%;
-    width: 100%;
+main {
+    height: 88%;
 }
 
 p-menubar {
@@ -183,5 +182,43 @@ p-menubar {
     background-color: rgba(#343e4d, 0.7)
 }
 
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer-links {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            margin-right: 10px;
+
+
+        }
+    }
+}
+
+:host {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    overflow-y: auto;
+}
+
+app-footer {
+    flex-shrink: 0;
+}
 
 @import "primeng/resources/themes/bootstrap4-dark-blue/theme.css";
