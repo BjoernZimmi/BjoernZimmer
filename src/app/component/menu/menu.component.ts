@@ -51,8 +51,3 @@ export class MenuComponent implements OnInit {
   }
 
 }
-
-interface Country {
-  code: string;
-  name: string;
-}
