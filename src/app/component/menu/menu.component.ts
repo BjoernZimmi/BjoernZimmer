@@ -23,6 +23,8 @@ export class MenuComponent implements OnInit {
     { code: 'GB', name: 'EN' },
   ];
 
+  constructor() {}
+
   ngOnInit(): void {
     this.menubarItems = [
       {

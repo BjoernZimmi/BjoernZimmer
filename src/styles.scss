@@ -5,6 +5,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     margin: 0;
+    
 }
 
 .container {
@@ -28,6 +29,7 @@ body {
 }
 
 .headline1 {
+    min-width: 550px;
     width: 50%;
     height: auto;
     background-color: rgba(0, 0, 0, 0.6);
@@ -45,7 +47,9 @@ h3 {
 }
 
 p {
-    padding-left: 1.4em;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    font-size: medium;
 }
 
 .p-menuitem-text {
