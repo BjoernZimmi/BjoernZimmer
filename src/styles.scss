@@ -20,15 +20,15 @@ body {
     background: rgba($color: #343e4d, $alpha: 1.0);
     display: flex;
     color: #ffffff;
-    // border: outset;
-    // border-inline: none;
+    position: sticky;
+    top: 0;
 }
 
 footer {
     background: #343e4d;
     color: #ffffff;
-    border-top:medium;
-    border-inline: none;
+    bottom: 0;
+    position: sticky;
 }
 
 .child {

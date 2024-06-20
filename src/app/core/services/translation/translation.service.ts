@@ -27,8 +27,6 @@ export class TranslationService {
       const supportedLanguages = ['de', 'en'];
 
       this.browserLanguage = browserLang;
-      console.log(browserLang);
-
 
       if (supportedLanguages.includes(browserLang)) {
         defaultLang = browserLang;
