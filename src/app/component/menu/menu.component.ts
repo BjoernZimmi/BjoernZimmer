@@ -26,7 +26,7 @@ export class MenuComponent implements OnInit {
     { code: 'en', name: 'EN' },
   ];
 
-  constructor(private translationService: TranslationService) {}
+  constructor(private translationService: TranslationService) { }
 
   ngOnInit(): void {
     this.menubarItems = [
@@ -41,6 +41,10 @@ export class MenuComponent implements OnInit {
       {
         label: 'Backend',
         routerLink: 'backend'
+      },
+      {
+        label: 'Login',
+        routerLink: 'login'
       }
     ];
 
