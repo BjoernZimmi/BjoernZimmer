@@ -10,7 +10,6 @@ import { environments } from '../../../../environments/environment';
 export class TranslationService {
   private browserLanguageSignal = signal<string>('de');
   private jsonDataSignal = signal<any>(null);
-  private apiUrl = environments.apiPath;
 
   constructor(
     public translate: TranslateService,
@@ -57,7 +56,7 @@ export class TranslationService {
   }
 
   private loadJsonData(language: string): void {
-    this.http.get<any>(`${this.apiUrl}language-data?lang=${language}`).subscribe(
+    this.http.get<any>(`${environments.apiPath}language-data?lang=${language}`).subscribe(
       data => this.jsonDataSignal.set(data),
       error => console.error('Error fetching JSON data', error)
     );
