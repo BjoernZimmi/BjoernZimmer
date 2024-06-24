@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Signal } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../../core/services/translation/translation.service';
 
@@ -11,14 +11,14 @@ import { TranslationService } from '../../core/services/translation/translation.
 })
 export class InformationComponent implements OnInit {
 
-  browser!: string;
+  browser!: Signal<string>;
 
   constructor(public tranlationService: TranslationService) {
 
   }
 
   ngOnInit(): void {
-    this.browser = this.tranlationService.setbrowserLanguage();
+    this.browser = this.tranlationService.getCurrentLanguage();
   }
 
 }
