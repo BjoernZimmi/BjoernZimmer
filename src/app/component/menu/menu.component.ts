@@ -52,7 +52,5 @@ export class MenuComponent implements OnInit {
 
   onFlagClick(country: Country): void {
     this.translationService.useLanguage(country.code);
-
   }
-
 }
