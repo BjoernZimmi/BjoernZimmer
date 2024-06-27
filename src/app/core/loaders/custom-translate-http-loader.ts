@@ -1,6 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { TranslateLoader } from "@ngx-translate/core";
-import { environments } from "../../../environments/environment";
+import { environment } from "../../../environments/environment";
 import { Observable } from "rxjs";
 
 export class CustomTranslateHttpLoader implements TranslateLoader {
@@ -11,15 +11,14 @@ export class CustomTranslateHttpLoader implements TranslateLoader {
     getTranslation(lang: string): Observable<any> {
         let baseUrl: string;
 
-        if (environments.production === true) {
+        if (environment.production) {
             baseUrl = `../../../assets/files-to-remove/`;
-            console.log('environments.production is: ' + environments.production);
-            
+            console.log('environment.production is: ' + environment.production);
             return this.http.get(`${baseUrl}${lang}.json`);
         }
         else {
-            baseUrl = `${environments.apiPath}language-data?lang=`;
-            console.log('environments.production is: ' + environments.production);
+            baseUrl = `${environment.apiPath}language-data?lang=`;
+            console.log('environment.production is: ' + environment.production);
             return this.http.get(`${baseUrl}${lang}`);
         }
     }

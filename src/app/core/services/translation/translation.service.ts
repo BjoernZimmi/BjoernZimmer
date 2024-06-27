@@ -2,7 +2,7 @@ import { Injectable, Inject, PLATFORM_ID, signal, Signal } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { TranslateService } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
-import { environments } from '../../../../environments/environment';
+import { environment } from '../../../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
@@ -56,7 +56,7 @@ export class TranslationService {
   }
 
   private loadJsonData(language: string): void {
-    this.http.get<any>(`${environments.apiPath}language-data?lang=${language}`).subscribe(
+    this.http.get<any>(`${environment.apiPath}language-data?lang=${language}`).subscribe(
       data => this.jsonDataSignal.set(data),
       error => console.error('Error fetching JSON data', error)
     );
