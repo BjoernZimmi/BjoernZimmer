@@ -12,11 +12,14 @@ export class CustomTranslateHttpLoader implements TranslateLoader {
         let baseUrl: string;
 
         if (environments.production === false) {
-            baseUrl = `../../../assets/files-to-remove/`
+            baseUrl = `../../../assets/files-to-remove/`;
+            console.log('environments.production is: ' + environments.production);
+            
             return this.http.get(`${baseUrl}${lang}.json`);
         }
         else {
-            baseUrl = `${environments.apiPath}language-data?lang=`
+            baseUrl = `${environments.apiPath}language-data?lang=`;
+            console.log('environments.production is: ' + environments.production);
             return this.http.get(`${baseUrl}${lang}`);
         }
     }
