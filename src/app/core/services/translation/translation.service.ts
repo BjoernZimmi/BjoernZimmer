@@ -52,7 +52,7 @@ export class TranslationService {
   }
 
   getJsonData(): Signal<any> {
-    return this.jsonDataSignal
+    return this.jsonDataSignal;
   }
 
   private loadJsonData(language: string): void {

@@ -5,7 +5,6 @@ import { Observable } from "rxjs";
 
 export class CustomTranslateHttpLoader implements TranslateLoader {
 
-
     constructor(private http: HttpClient) { }
 
     getTranslation(lang: string): Observable<any> {
