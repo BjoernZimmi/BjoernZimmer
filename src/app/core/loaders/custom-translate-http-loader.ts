@@ -11,7 +11,7 @@ export class CustomTranslateHttpLoader implements TranslateLoader {
     getTranslation(lang: string): Observable<any> {
         let baseUrl: string;
 
-        if (environments.production === false) {
+        if (environments.production === true) {
             baseUrl = `../../../assets/files-to-remove/`;
             console.log('environments.production is: ' + environments.production);
             
