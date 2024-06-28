@@ -44,7 +44,7 @@ export class TranslationService {
   useLanguage(language: string): void {
     this.browserLanguageSignal.set(language);
     this.translate.use(language);
-    this.loadJsonData(language);
+    // this.loadJsonData(language);
   }
 
   getCurrentLanguage(): Signal<string> {
