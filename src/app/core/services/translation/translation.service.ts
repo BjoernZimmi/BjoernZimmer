@@ -7,7 +7,6 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class TranslationService {
   private browserLanguageSignal = signal<string>('de');
-  private jsonDataSignal = signal<any>(null);
 
   constructor(
     public translate: TranslateService,
