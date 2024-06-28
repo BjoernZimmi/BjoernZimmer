@@ -1,8 +1,6 @@
 import { Injectable, Inject, PLATFORM_ID, signal, Signal } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { TranslateService } from '@ngx-translate/core';
-import { HttpClient } from '@angular/common/http';
-import { environment } from '../../../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
@@ -13,12 +11,10 @@ export class TranslationService {
 
   constructor(
     public translate: TranslateService,
-    private http: HttpClient,
     @Inject(PLATFORM_ID) private platformId: Object
   ) {
     // Initialisiert die Standardsprache des Browsers
     this.initializeDefaultLanguage();
-    this.loadJsonData(this.browserLanguageSignal());
   }
 
   private initializeDefaultLanguage(): void {
@@ -44,22 +40,9 @@ export class TranslationService {
   useLanguage(language: string): void {
     this.browserLanguageSignal.set(language);
     this.translate.use(language);
-    // this.loadJsonData(language);
   }
 
   getCurrentLanguage(): Signal<string> {
     return this.browserLanguageSignal;
   }
-
-  getJsonData(): Signal<any> {
-    return this.jsonDataSignal;
-  }
-
-  private loadJsonData(language: string): void {
-    this.http.get<any>(`${environment.apiPath}language-data?lang=${language}`).subscribe(
-      data => this.jsonDataSignal.set(data),
-      error => console.error('Error fetching JSON data', error)
-    );
-  }
-
 }

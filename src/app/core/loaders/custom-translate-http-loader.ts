@@ -10,7 +10,7 @@ export class CustomTranslateHttpLoader implements TranslateLoader {
     getTranslation(lang: string): Observable<any> {
         let baseUrl: string;
 
-        if (environment.production) {
+        if (!environment.production) {
             baseUrl = `../../../assets/files-to-remove/`;
             console.log('environment.production is: ' + environment.production);
             return this.http.get(`${baseUrl}${lang}.json`);
