@@ -152,15 +152,28 @@ li {
     justify-content: center;
 }
 
+.p-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-top: 0.4rem;
+}
+
 @media screen and (max-width: 960px) {
     .p-menubar .p-menubar-button {
         background: rgba(52, 62, 77, 0.6) !important;
-        display: flex;
         width: 5em;
         height: 2rem;
         color: rgba(255, 255, 255, 0.6);
         border-radius: 50%;
         transition: color 0.15s, box-shadow 0.15s;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .p-menubar {
+        position: relative;
+        display: grid !important;
+
     }
 }
 
