@@ -3,5 +3,6 @@ import { Environment } from "./environment.interface";
 export const environment: Environment = {
     production: true,
     name: 'prod',
-    apiPath: ''
+    apiPath: '',
+    version: require('../../package.json').version
 }

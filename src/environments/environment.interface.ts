@@ -1,5 +1,6 @@
 export interface Environment {
     production: boolean,
     name: string,
-    apiPath: string
+    apiPath: string,
+    version?: number
 }
