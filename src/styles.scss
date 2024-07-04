@@ -1,8 +1,15 @@
 @import "primeng/resources/themes/bootstrap4-dark-blue/theme.css";
 
+$primary-color: rgb(52, 62, 77);
+$secondary-color: lightgrey;
+$background-color: black;
+// $text-color: ;
+$p-menubar: white;
+
+
 html,
 body {
-    background-color: black;
+    background-color: $background-color;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
@@ -14,7 +21,7 @@ a {
 }
 
 a:visited {
-    color: lightgrey;
+    color: $secondary-color;
 }
 
 a:hover {
@@ -60,7 +67,7 @@ h3 {
     min-width: 550px;
     width: 50%;
     height: auto;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba($background-color, 0.6);
     vertical-align: middle;
 }
 
@@ -101,7 +108,7 @@ li {
 }
 
 .menuBarContainer {
-    background: rgba(52, 62, 77, 1.0);
+    background: rgba($primary-color, 1.0);
     display: flex;
     color: #ffffff;
     position: sticky;
@@ -125,7 +132,7 @@ li {
 }
 
 .p-dropdown-panel {
-    background-color: rgba(52, 62, 77, 0.7);
+    background-color: rgba($background-color, 0.7);
 }
 
 .p-menuitem-text {
@@ -134,7 +141,7 @@ li {
 }
 
 .p-menubar {
-    color: rgba(255, 255, 255);
+    color: $p-menubar;
 }
 
 .p-menubar .p-menuitem.p-highlight>.p-menuitem-content {
@@ -160,10 +167,10 @@ li {
 
 @media screen and (max-width: 960px) {
     .p-menubar .p-menubar-button {
-        background: rgba(52, 62, 77, 0.6) !important;
+        background: rgba($background-color, 0.6) !important;
         width: 5em;
         height: 2rem;
-        color: rgba(255, 255, 255, 0.6);
+        color: rgba($p-menubar, 0.6);
         border-radius: 50%;
         transition: color 0.15s, box-shadow 0.15s;
     }
