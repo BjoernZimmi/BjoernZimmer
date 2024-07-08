@@ -15,7 +15,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     margin: 0;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 a {
@@ -28,6 +28,11 @@ a:visited {
 
 a:hover {
     color: lightskyblue;
+}
+
+.box-container-padding {
+    padding-top: 6em;
+    padding-bottom: 6em;
 }
 
 .child {
