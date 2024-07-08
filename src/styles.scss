@@ -80,21 +80,26 @@ h3 {
 
 .image1 {
     background-image: url(../src/assets/images/background-blue.png);
+    background-repeat: repeat-y;
+    width: 100%;
 }
 
 .image2 {
     background-image: url(../src/assets/images/binary-code-4k-computer-code-programming-zeroes-and-units.png);
+    background-repeat: repeat-y;
+    width: 100%;
 }
 
 .image3 {
     background-image: url(../src/assets/images/rpa-concept-with-blurry-hand-touching-screen.png);
+    background-repeat: repeat-y;
+    width: 100%;
 }
 
 .imgBg {
-    background-size: cover;
-    background-repeat: no-repeat;
+    // background-size: cover;
     width: 100% !important;
-    height: 100%;
+    // height: 100vh;
     background-position: center center;
 }
 
