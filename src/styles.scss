@@ -103,9 +103,9 @@ li {
     margin-right: 10px;
 }
 
-.main {
-    height: 88%;
-}
+// .main {
+//     height: 88%;
+// }
 
 .max-width-dropdown {
     width: 120px !important;
@@ -242,7 +242,7 @@ p {
 main {
     flex: 1;
     overflow-y: auto;
-    height: -webkit-fill-available;
+    height: 85vh;
 }
 
 app-footer {
