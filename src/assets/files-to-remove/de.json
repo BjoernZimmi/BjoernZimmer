@@ -1,11 +1,11 @@
 {
     "BROWSER_INFORMATION": "Ihre aktuelle Browser Sprache ist:",
     "CONTACT": "Kontakt",
-    "DATA_PROTECTION": "Datenschutz",
     "IMPRINT": "Impressum",
     "INFORMATION": "Informationen",
     "LOGIN": "Login",
     "LOGIN_TEXT_1": "In Arbeit, bald werden hier viele Informationen zum Login stehen. Bis dahin steht nur ein kleiner Text als Platzhalter.",
+    "PRIVACY_POLICE": "Datenschutz",
     "RIGHTS": "Alle Rechte vorbehalten.",
     "TEXT_BACKEND_1": "In Arbeit, bald werden hier viele Informationen zum Backend stehen. Bis dahin steht nur ein kleiner Text als Platzhalter.",
     "TEXT_FRONTEND_1": "In Arbeit, bald werden hier viele Informationen zum Frontend stehen. Bis dahin steht nur ein kleiner Text als Platzhalter.",

@@ -1,8 +1,9 @@
 @import "primeng/resources/themes/bootstrap4-dark-blue/theme.css";
 
-$primary-color: rgb(52, 62, 77);
+$primary-color: rgb(25, 30, 53);
 $secondary-color: lightgrey;
 $background-color: black;
+$text_background-color: rgb(20,20,55);
 $text-color: lightgrey;
 $p-menubar: white;
 
@@ -67,7 +68,7 @@ h3 {
     min-width: 550px;
     width: 50%;
     height: auto;
-    background-color: rgba($background-color, 0.6);
+    background-color: rgba($text_background-color, 0.6);
     vertical-align: middle;
 }
 
@@ -125,6 +126,7 @@ li {
 
 .p-dropdown {
     display: flex;
+    background: $primary-color;
 }
 
 .p-dropdown-label {
@@ -141,6 +143,7 @@ li {
 }
 
 .p-menubar {
+    background: $primary-color;
     color: $p-menubar;
 }
 
@@ -210,7 +213,7 @@ p {
 }
 
 .footer {
-    background-color: #343e4d;
+    background-color: $primary-color;
     padding: 5px 0;
     text-align: center;
     color: #ffffff;
